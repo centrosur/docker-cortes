@@ -1,0 +1,38 @@
+services:
+  postgresdb:
+    image: postgres
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - POSTGRES_USER=$DATABASE_USER
+      - POSTGRES_PASSWORD=$DATABASE_PASSWORD
+      - POSTGRES_DB=$DATABASE_NAME
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgres
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+  app:
+    depends_on:
+      - postgresdb
+    build: ./backend-pdfs
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - $PORT_BACKEND:$PORT_BACKEND
+    stdin_open: true
+    tty: true
+  angular-app:
+    depends_on:
+      - app
+    build: 
+      context: .
+      dockerfile: frontend-pdfs/Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "8080:80"  # Exponer el puerto 8080 en la máquina local al puerto 80 del contenedor
+    # volumes:
+      # - ./frontend-pdfs/www:/usr/share/nginx/html  # (Opcional) Puedes montar el directorio www si quieres cambiar el contenido sin reconstruir
+volumes: 
+  db:

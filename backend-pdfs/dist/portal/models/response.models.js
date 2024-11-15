@@ -1,0 +1,58 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ModelsResponsePortal = void 0;
+var ModelsResponsePortal;
+(function (ModelsResponsePortal) {
+    class RESPONSE_VALID_CONCESION_PERMISOS {
+    }
+    ModelsResponsePortal.RESPONSE_VALID_CONCESION_PERMISOS = RESPONSE_VALID_CONCESION_PERMISOS;
+    class RESPONSE_CONCEDER_PERMISOS_TERCEROS {
+    }
+    ModelsResponsePortal.RESPONSE_CONCEDER_PERMISOS_TERCEROS = RESPONSE_CONCEDER_PERMISOS_TERCEROS;
+    class RESPONSE_GET_URL_PAYPHONE {
+    }
+    ModelsResponsePortal.RESPONSE_GET_URL_PAYPHONE = RESPONSE_GET_URL_PAYPHONE;
+    class RESPONSE_PREPARE_URL_PAYPHONE {
+    }
+    ModelsResponsePortal.RESPONSE_PREPARE_URL_PAYPHONE = RESPONSE_PREPARE_URL_PAYPHONE;
+    class RESPONSE_CONFIRM_PAYPHONE {
+    }
+    ModelsResponsePortal.RESPONSE_CONFIRM_PAYPHONE = RESPONSE_CONFIRM_PAYPHONE;
+    class RESPONSE_VERIFICAR_PAGO {
+    }
+    ModelsResponsePortal.RESPONSE_VERIFICAR_PAGO = RESPONSE_VERIFICAR_PAGO;
+    class RESPONSE_DOWNLOAD_DOCUMENT {
+    }
+    ModelsResponsePortal.RESPONSE_DOWNLOAD_DOCUMENT = RESPONSE_DOWNLOAD_DOCUMENT;
+    class RESPONSE_SEND_PDF_TOEMAIL {
+    }
+    ModelsResponsePortal.RESPONSE_SEND_PDF_TOEMAIL = RESPONSE_SEND_PDF_TOEMAIL;
+    class RESPONSE_CORTES_ESTIAJE {
+    }
+    ModelsResponsePortal.RESPONSE_CORTES_ESTIAJE = RESPONSE_CORTES_ESTIAJE;
+    class RESPONSE_ESTADO_NUEVO_SERVICIO {
+    }
+    ModelsResponsePortal.RESPONSE_ESTADO_NUEVO_SERVICIO = RESPONSE_ESTADO_NUEVO_SERVICIO;
+    class RESPONSE_CORTE_DESCONEXION {
+    }
+    ModelsResponsePortal.RESPONSE_CORTE_DESCONEXION = RESPONSE_CORTE_DESCONEXION;
+    class RESPONSE_CORTE_GENERAL {
+    }
+    ModelsResponsePortal.RESPONSE_CORTE_GENERAL = RESPONSE_CORTE_GENERAL;
+    class RESPONSE_RECLAMOS {
+    }
+    ModelsResponsePortal.RESPONSE_RECLAMOS = RESPONSE_RECLAMOS;
+    class RESPONSE_GET_RECLAMOS {
+    }
+    ModelsResponsePortal.RESPONSE_GET_RECLAMOS = RESPONSE_GET_RECLAMOS;
+    class SAVE_TRAMITE_ONLINE {
+    }
+    ModelsResponsePortal.SAVE_TRAMITE_ONLINE = SAVE_TRAMITE_ONLINE;
+    class RESPONSE_DEFAULT {
+    }
+    ModelsResponsePortal.RESPONSE_DEFAULT = RESPONSE_DEFAULT;
+    class VALID_CONTRATISTA {
+    }
+    ModelsResponsePortal.VALID_CONTRATISTA = VALID_CONTRATISTA;
+})(ModelsResponsePortal = exports.ModelsResponsePortal || (exports.ModelsResponsePortal = {}));
+//# sourceMappingURL=response.models.js.map
