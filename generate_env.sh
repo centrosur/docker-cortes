@@ -36,10 +36,13 @@ ADMIN_EMAIL=juanpablo.jpho@gmail.com
 
 #nginx
 NUM_CONNECTIONS=5000
+SSL_CERTIFICATE=fullchain.pem # Cambia por el nombre correcto de tu certificado
+SSL_CERTIFICATE_KEY=privkey.pem # Cambia por el nombre correcto de tu clave privada
+SERVERNAME=cortes.centrosur.gob.ec
 
 # app
-LOGO_URL=assets/logos/logo-empresa.png
-FAVICON_URL=assets/favicons/favicon.png
+LOGO_URL=assets/logo/logo-empresa.png
+FAVICON_URL=assets/favicon/favicon.png
 MINISTERIO_URL=assets/imagenes/logo-ministerio.png
 MAX_HEIGHT_TABLE=600
 MAX_ROW_IN_TABLE=20

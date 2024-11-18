@@ -13,12 +13,11 @@ RUN chmod +x /entrypoint.sh
 COPY ./frontend-pdfs/www /usr/share/nginx/html
 COPY frontend-pdfs/runtime-env.js /usr/share/nginx/html/assets/js/runtime-env-template.js
 
-COPY ./assets/logo /usr/share/nginx/html/assets/logos
-COPY ./assets/favicon /usr/share/nginx/html/assets/favicons
-
+COPY ./assets/logo /usr/share/nginx/html/assets/logo
+COPY ./assets/favicon /usr/share/nginx/html/assets/favicon
 
 # Expone el puerto 80 para el servidor
-EXPOSE 80
+EXPOSE 443
 
 # Usar el script de entrada para iniciar Nginx
 ENTRYPOINT ["/entrypoint.sh"]

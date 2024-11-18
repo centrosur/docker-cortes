@@ -47,8 +47,8 @@ echo "Docker y Docker Compose están instalados y listos para usar."
 
 # Nombre de la carpeta assets
 ASSETS_FOLDER="assets"
-LOGOS_FOLDER="assets/logos"
-FAVICONS_FOLDER="assets/favicons"
+LOGOS_FOLDER="assets/logo"
+FAVICONS_FOLDER="assets/favicon"
 
 # Verificar si el ASSETS_FOLDER ya existe
 if [ -d "$ASSETS_FOLDER" ]; then
