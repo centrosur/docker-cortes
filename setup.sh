@@ -46,8 +46,17 @@ echo "Docker y Docker Compose están instalados y listos para usar."
 # Crear las carpetas donde se debe guardar los assets
 
 # Nombre de la carpeta assets
+ASSETS_FOLDER="assets"
 LOGOS_FOLDER="assets/logos"
 FAVICONS_FOLDER="assets/favicons"
+
+# Verificar si el ASSETS_FOLDER ya existe
+if [ -d "$ASSETS_FOLDER" ]; then
+  echo "Carpeta $ASSETS_FOLDER ya existe."
+else
+  mkdir "$ASSETS_FOLDER"
+  echo "Carpeta '$ASSETS_FOLDER' creada correctamente."
+fi
 
 # Verificar si el LOGOS_FOLDER ya existe
 if [ -d "$LOGOS_FOLDER" ]; then
