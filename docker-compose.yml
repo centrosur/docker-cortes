@@ -31,8 +31,9 @@ services:
     env_file:
       - .env
     ports:
-      - "8080:80"  # Exponer el puerto 8080 en la máquina local al puerto 80 del contenedor
-    # volumes:
+      - "443:443"
+    volumes:
+      - ./certs:/etc/nginx/certs:ro # Certificados SSL
       # - ./frontend-pdfs/www:/usr/share/nginx/html  # (Opcional) Puedes montar el directorio www si quieres cambiar el contenido sin reconstruir
 volumes: 
   db:
