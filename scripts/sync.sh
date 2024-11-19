@@ -18,7 +18,7 @@ fi
 echo "Repositorio actualizado con éxito."
 
 # Paso 3: Ejecutar el script build.sh
-SETUP_SCRIPT="script/build.sh"
+SETUP_SCRIPT="scripts/build.sh"
 
 if [ -f "$SETUP_SCRIPT" ]; then
   echo "Ejecutando el script build.sh..."
