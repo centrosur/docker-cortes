@@ -85,7 +85,7 @@ else
 fi
 
 # run generate_env para generar las variables de entorno
-chmod +x generate_env.sh
-bash generate_env.sh
+chmod +x scripts/generate_env.sh
+bash scripts/generate_env.sh
 
 echo "Configuraciones iniciales realizadas con éxito"

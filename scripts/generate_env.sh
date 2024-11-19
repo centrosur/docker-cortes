@@ -27,8 +27,8 @@ DATABASE_ESQUEMA=public
 DATABASE_PORT=5432
 DATABASE_TYPE=postgress
 
-JWT_SECRET=xxxxxx
-SECURITY_KEY=xxxxxxxx
+JWT_SECRET=xxxxxx # Cambia por una cadena de texto compleja
+SECURITY_KEY=xxxxxxxx # Cambia por una cadena de texto compleja
 
 ADMIN_NAME=Juan Pablo Hurtado
 ADMIN_PASSWORD=123456
@@ -36,13 +36,13 @@ ADMIN_EMAIL=juanpablo.jpho@gmail.com
 
 #nginx
 NUM_CONNECTIONS=5000
-SSL_CERTIFICATE=fullchain.pem # Cambia por el nombre correcto de tu certificado
-SSL_CERTIFICATE_KEY=privkey.pem # Cambia por el nombre correcto de tu clave privada
-SERVERNAME=cortes.centrosur.gob.ec
+SSL_CERTIFICATE=fullchain.crt # Cambia por el nombre correcto de tu certificado
+SSL_CERTIFICATE_KEY=privkey.key # Cambia por el nombre correcto de tu clave privada
+SERVERNAME=cortes.centrosur.gob.ec # Cambia por el subdominio que apunta a este servidor
 
 # app
-LOGO_URL=assets/logo/logo-empresa.png
-FAVICON_URL=assets/favicon/favicon.png
+LOGO_URL=assets/logo/logo-empresa.png # Cambia por la ruta correcta del logo de la empresa
+FAVICON_URL=assets/favicon/favicon.png #C ambia por la ruta correcta del favicon de la empresa
 MINISTERIO_URL=assets/imagenes/logo-ministerio.png
 MAX_HEIGHT_TABLE=600
 MAX_ROW_IN_TABLE=20
