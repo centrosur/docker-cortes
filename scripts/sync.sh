@@ -6,7 +6,15 @@ if [ ! -d .git ]; then
   exit 1
 fi
 
-# Paso 2: Traer los cambios del repositorio remoto
+# Paso 2: Descartar cambios locales
+echo "Descartando todos los cambios locales..."
+git reset --hard HEAD
+if [ $? -ne 0 ]; then
+  echo "Error al descartar cambios locales. Por favor, verifica el estado del repositorio."
+  exit 1
+fi
+
+# Paso 3: Traer los cambios del repositorio remoto
 echo "Actualizando el repositorio..."
 git pull origin $(git rev-parse --abbrev-ref HEAD)
 
@@ -17,7 +25,7 @@ fi
 
 echo "Repositorio actualizado con éxito."
 
-# Paso 3: Ejecutar el script build.sh
+# Paso 4: Ejecutar el script build.sh
 SETUP_SCRIPT="scripts/build.sh"
 
 if [ -f "$SETUP_SCRIPT" ]; then
