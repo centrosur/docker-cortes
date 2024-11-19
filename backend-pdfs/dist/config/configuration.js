@@ -12,8 +12,8 @@ exports.default = () => ({
         databaseType: process.env.DATABASE_TYPE
     },
     codigoSociedad: '1023',
-    jwtSecret: process.env.JWT_SECRET,
-    securityKey: process.env.SECURITY_KEY,
+    jwtSecret: 'RDEtQ09UMUMtYzNudHIwc3Vy',
+    securityKey: 'Q2VudHJvIFN1ciAtIFBPUlRBTCBDSVVEQURBTk8gLSAyMDIz',
     host_backend: process.env.HOST_BACKEND,
     proxy_database: {
         host: process.env.HOST_DATABASE,
